@@ -29,7 +29,7 @@ This project employs exploratory descriptive analysis using several essential st
 
 ## Results
 Among the genres present in this dataset, drama, comedy, and action stand out with the highest number of movie releases. Drama and comedy likely hold the title of the most extensive film genres due to their inclusivity of a wide range of films.
-![image](images\Number_of_movies_per_genre.png)
+![My image](images\Number_of_movies_per_genre.png)
 
 The difference between the heights of the bars, which represent the average rating, is quite small.Documentary, biography and sport have the highest average rating while family, thriller and horror have the lowest average rating.
 ![My image](images/rating_by_genre.png)
@@ -58,9 +58,6 @@ Throughout the years, the foreign gross is often higher than the domestic gross 
 - It is beneficial to determine whether the total gross income of a genre increases proportionally if the production, development, marketing, and advertising budgets of the movie are increased. This can help in predicting the profits based on the budget.
 - Other than theatrical earnings, there are other sources of revenue for studios such as home entertainment sales and rentals, television rights, product placement fees and streaming services. It would be important to collect data about these sources of revenue and compare them to the revenue from the theatre earnings.
 
-##  For More Information
-See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/Analysis-for-a-Microsoft-New-Movie-Studio/blob/master/student.ipynb) or review this [presentation](https://github.com/Scholarchep/Analysis-for-a-Microsoft-New-Movie-Studio/blob/master/presentation.pdf).
-For additional information, contact Scholar Chepkirui at scholarchepkirui@gmail.com
 
 
 ## Repository Structure
