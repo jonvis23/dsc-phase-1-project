@@ -15,7 +15,7 @@ Questions :<br>
 Which genre of movies have the highest gross income?<br>
 Which genre of movies have a higher average rating?<br>
 What is the relationship between the average rating and the gross income?<br>
-What is the domestic gross and foreign gross income by start year of the movies?<br>
+
 
 ## Data
 
@@ -51,21 +51,21 @@ Over the years, it has been observed that the foreign gross income of movies ten
 In this project, I have analyzed, cleaned, and interpreted data to provide recommendations on the types of movies Microsoft should consider producing for the launch of their new movie studio.<br>
 
 The main criteria utilized to assess success in this endeavor are the 'total gross sales,' which encompass both the domestic box office gross and the foreign box office gross.<br>
-The genres of movie with the highest total gross sales are:<br>
+The genres of movie with the highest total gross income are:<br>
 
 >- Sci-Fi
 >- Adventure
 >- Animation
 <br>
 - The most prevalent genres among the released movies are drama, comedy, and action.
-- Based on the available dataset, the popularity and success of a genre can be determined by considering either the genre's average rating or its total gross income.
-- Documentary, biography, and sport genres have the highest average rating, while Sci-Fi, adventure, animation, and action genres have the highest total gross income. Interestingly, despite having the highest average rating, documentary and biography genres generate very low income. There appears to be no clear relationship between total gross income and average rating.
-- To maximize returns on their investment, Microsoft should focus on genres with the highest total gross income, namely Sci-Fi, adventure, animation, and action. These genres seem to attract a wide audience, leading to significant theatrical box office earnings.
+- Based on the available dataset, the popularity and success of a genre can be determined by considering either the genre's average rating or its total gross income.<br>
+- Documentary, biography, and sport genres have the highest average rating, while Sci-Fi, adventure, animation, and action genres have the highest total gross income. Interestingly, despite having the highest average rating, documentary and biography genres generate very low income. There appears to be no clear relationship between total gross income and average rating.<br>
+- To maximize returns on their investment, Microsoft should focus on genres with the highest total gross income, namely Sci-Fi, adventure, animation, and action. These genres seem to attract a wide audience, leading to significant theatrical box office earnings.<br>
 
 ## Future work
-- Additional investigation is necessary to identify the most optimal time of the year for releasing movies of specific genres.
-- It would be advantageous to explore whether increasing the production, development, marketing, and advertising budgets of a movie proportionally impacts the total gross income of its genre. This analysis could aid in predicting profits based on the budget allocated.
-- Apart from theatre earnings, studios generate revenue from various sources such as home entertainment sales, rentals, television rights, product placement fees, and streaming services. Collecting data on these revenue streams and comparing them with theatre earnings is crucial for a better analysis of a movie's overall financial performance.
+- Additional investigation is necessary to identify the most optimal time of the year for releasing movies of specific genres.<br>
+- It would be advantageous to explore whether increasing the production, development, marketing, and advertising budgets of a movie proportionally impacts the total gross income of its genre. This analysis could aid in predicting profits based on the budget allocated.<br>
+- Apart from theatre earnings, studios generate revenue from various sources such as home entertainment sales, rentals, television rights, product placement fees, and streaming services. Collecting data on these revenue streams and comparing them with theatre earnings is crucial for a better analysis of a movie's overall financial performance.<br>
 
 
 ## Repository Structure
