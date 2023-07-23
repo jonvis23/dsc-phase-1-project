@@ -1,65 +1,71 @@
-# Phase 1 Project
+# MICROSOFT MOVIE STUDIO ANALYSIS
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+Author: John ELvis
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+## Overview 
+This project employs exploratory data analysis to extract valuable information for Microsoft, aiming to establish a new movie studio. By analyzing datasets from IMDB and Box Office Mojo, the project provides recommendations regarding the film genres that Microsoft should consider exploring. 
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+The success and popularity of each genre are evaluated using two key metrics: the total gross incomes and the critical response. The results suggest that Microsoft would benefit from concentrating on genres such as Sci-Fi, adventure, animation, and action, as these genres have demonstrated higher total gross income.
 
-## Project Overview
+## Business Problem
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+Microsoft intends to join the league of prominent companies by venturing into the production of unique video content. To accomplish this, they plan to establish a movie studio. However, their lack of expertise in the field poses a challenge. This analysis primarily focuses on examining the prevailing trends in successful movies at the box office. Through an exploratory data analysis, valuable insights are generated, which can be used by the head of Microsoft's new movie studio to make informed decisions regarding the genres and themes of films to produce.
 
-### Business Problem
+Questions :<br>
+Which genre of movies have the highest gross income?<br>
+Which genre of movies have a higher average rating?<br>
+What is the relationship between the average rating and the gross income?<br>
+What is the domestic gross and foreign gross income by start year of the movies?<br>
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+## Data
 
-### The Data
+The datasets utilized for this analysis are sourced from IMDB and Box Office Mojo. The following is a brief overview of the three datasets:
+- imdb.title.basics: Contains info about movie titles such as primary title, original title, start year, runtime minutes  and genres.
+- imdb.title.ratings: Contains the IMDb rating and votes information for titles.
+- bom.movie_gross: Contains the domestic gross and foreign gross for the movie titles.
 
-In the folder `zippedData` are movie datasets from:
+## Methods
+This project employs exploratory descriptive analysis using several essential steps to gain valuable insights. The process involves importing necessary libraries and loading the datasets, understanding the data, performing data cleaning, and finally, visualizing the data for a comprehensive exploration.
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Results
+Among the genres present in this dataset, drama, comedy, and action stand out with the highest number of movie releases. Drama and comedy likely hold the title of the most extensive film genres due to their inclusivity of a wide range of films.
+![image](images\Number of movies per genre.png)
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+The difference between the heights of the bars, which represent the average rating, is quite small.Documentary, biography and sport have the highest average rating while family, thriller and horror have the lowest average rating.
+![My image](images/rating_by_genre.png)
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+Box office Mojo tracks theatrical box office earnings. The genres with the highest income are Sci-Fi, adventure, animation and action while the genres with the lowest income are romance, documentary and war.
+![My image](images/income_by_genre.png)
 
-## Deliverables
 
-There are three deliverables for this project:
+There is no clear relationship between the total gross income and the average rating. However, movies with a low average rating of below 4 have a low total gross income.
+![My image](images/gross_vs_rating.png)
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+Throughout the years, the foreign gross is often higher than the domestic gross income when a movie is released. Movies that were released in 2018 had the highest foreign gross and domestic gross income.The gross incomes then drastically dropped to their lowest for movies that were released in 2019. 
+![My image](images/start_year.png)
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+## Conclusions and recommendations
+- Documentary, biography and sport have the highest average rating while Sci-Fi, adventure, animation and action have the highest total gross income.Despite documentary and biography having the highest average rating, they have a very low income.There is no clear relationship between the total gross income and the average rating.
+- Microsoft should consider focusing on genres with the highest total gross income in order to get higher returns on their investment. These genres are Sci-Fi, adventure, animation and action.
+- Microsoft should focus on exploring more the international markets which have had a higher gross over the years when compared to the domestic markets. The movies created should consider the interests of the international market.
+- Due to the drastic drop in the gross from theatrical earnings for movies released in 2019, Microsoft should look into other sources of revenue and invest in them.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+## Future work
+- Further research should be done to determine the best time of the year to release a movie of a certain genre.
+- It is beneficial to determine whether the total gross income of a genre increases proportionally if the production, development, marketing, and advertising budgets of the movie are increased. This can help in predicting the profits based on the budget.
+- Other than theatrical earnings, there are other sources of revenue for studios such as home entertainment sales and rentals, television rights, product placement fees and streaming services. It would be important to collect data about these sources of revenue and compare them to the revenue from the theatre earnings.
 
-## Getting Started
+##  For More Information
+See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/Analysis-for-a-Microsoft-New-Movie-Studio/blob/master/student.ipynb) or review this [presentation](https://github.com/Scholarchep/Analysis-for-a-Microsoft-New-Movie-Studio/blob/master/presentation.pdf).
+For additional information, contact Scholar Chepkirui at scholarchepkirui@gmail.com
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+## Repository Structure
+├── images                                         <- Both sourced externally and generated from code <br>
+├── zippedData                                     <- Both sourced externally and generated from code <br>
+├── README.md                                      <- The top-level README for reviewers of this project <br>
+├── presentation.pdf                               <- PDF version of project presentation <br>
+└── student.ipynb                                  <- Narrative documentation of analysis in Jupyter notebook <br>
