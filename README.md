@@ -27,42 +27,50 @@ The datasets utilized for this analysis are sourced from IMDB and Box Office Moj
 ## Methods
 This project employs exploratory descriptive analysis using several essential steps to gain valuable insights. The process involves importing necessary libraries and loading the datasets, understanding the data, performing data cleaning, and finally, visualizing the data for a comprehensive exploration.
 
-## Results
+## Results of this analysis
 Among the genres present in this dataset, drama, comedy, and action stand out with the highest number of movie releases. Drama and comedy likely hold the title of the most extensive film genres due to their inclusivity of a wide range of films.
-![My image](images\Number_of_movies_per_genre.png)
+![image](images/Number_of_movies_per_genre.png)
 
-The difference between the heights of the bars, which represent the average rating, is quite small.Documentary, biography and sport have the highest average rating while family, thriller and horror have the lowest average rating.
-![My image](images/rating_by_genre.png)
+The diffrenece in heights between the bars, which correspond to the average ratings, is relatively small. Documentary, biography, and sport genres exhibit the highest average ratings, whereas family, thriller, and horror genres showcase the lowest average ratings.
+![image](images/Distribution%20of%20the%20movies'%20average%20rating.png)
 
 Box office Mojo tracks theatrical box office earnings. The genres with the highest income are Sci-Fi, adventure, animation and action while the genres with the lowest income are romance, documentary and war.
-![My image](images/income_by_genre.png)
+![image](images/Total%20gross%20income%20by%20genre.png)
 
 
-There is no clear relationship between the total gross income and the average rating. However, movies with a low average rating of below 4 have a low total gross income.
-![My image](images/gross_vs_rating.png)
+The correlation between the total gross income and the average rating is not evident. However, it is apparent that movies with an average rating below 4 tend to have a lower total gross income.
+![image](images/Scatter%20Plot%20of%20Total%20Gross%20vs%20Average%20Rating.png)
 
 
-Throughout the years, the foreign gross is often higher than the domestic gross income when a movie is released. Movies that were released in 2018 had the highest foreign gross and domestic gross income.The gross incomes then drastically dropped to their lowest for movies that were released in 2019. 
-![My image](images/start_year.png)
+Over the years, it has been observed that the foreign gross income of movies tends to surpass their domestic gross income upon release. The movies released in 2018 achieved the highest foreign and domestic gross incomes. However, the gross incomes experienced a sharp decline for movies released in 2019, reaching their lowest point during that year.
+![My image](images/Lineplot%20showing%20the%20domestic%20gross%20and%20foreign%20gross%20income%20against%20start%20year.png)
 
 
 
 ## Conclusions and recommendations
-- Documentary, biography and sport have the highest average rating while Sci-Fi, adventure, animation and action have the highest total gross income.Despite documentary and biography having the highest average rating, they have a very low income.There is no clear relationship between the total gross income and the average rating.
-- Microsoft should consider focusing on genres with the highest total gross income in order to get higher returns on their investment. These genres are Sci-Fi, adventure, animation and action.
-- Microsoft should focus on exploring more the international markets which have had a higher gross over the years when compared to the domestic markets. The movies created should consider the interests of the international market.
-- Due to the drastic drop in the gross from theatrical earnings for movies released in 2019, Microsoft should look into other sources of revenue and invest in them.
+In this project, I have analyzed, cleaned, and interpreted data to provide recommendations on the types of movies Microsoft should consider producing for the launch of their new movie studio.<br>
+
+The main criteria utilized to assess success in this endeavor are the 'total gross sales,' which encompass both the domestic box office gross and the foreign box office gross.<br>
+The genres of movie with the highest total gross sales are:<br>
+
+>- Sci-Fi
+>- Adventure
+>- Animation
+<br>
+- The most prevalent genres among the released movies are drama, comedy, and action.
+- Based on the available dataset, the popularity and success of a genre can be determined by considering either the genre's average rating or its total gross income.
+- Documentary, biography, and sport genres have the highest average rating, while Sci-Fi, adventure, animation, and action genres have the highest total gross income. Interestingly, despite having the highest average rating, documentary and biography genres generate very low income. There appears to be no clear relationship between total gross income and average rating.
+- To maximize returns on their investment, Microsoft should focus on genres with the highest total gross income, namely Sci-Fi, adventure, animation, and action. These genres seem to attract a wide audience, leading to significant theatrical box office earnings.
 
 ## Future work
-- Further research should be done to determine the best time of the year to release a movie of a certain genre.
-- It is beneficial to determine whether the total gross income of a genre increases proportionally if the production, development, marketing, and advertising budgets of the movie are increased. This can help in predicting the profits based on the budget.
-- Other than theatrical earnings, there are other sources of revenue for studios such as home entertainment sales and rentals, television rights, product placement fees and streaming services. It would be important to collect data about these sources of revenue and compare them to the revenue from the theatre earnings.
-
+- Additional investigation is necessary to identify the most optimal time of the year for releasing movies of specific genres.
+- It would be advantageous to explore whether increasing the production, development, marketing, and advertising budgets of a movie proportionally impacts the total gross income of its genre. This analysis could aid in predicting profits based on the budget allocated.
+- Apart from theatre earnings, studios generate revenue from various sources such as home entertainment sales, rentals, television rights, product placement fees, and streaming services. Collecting data on these revenue streams and comparing them with theatre earnings is crucial for a better analysis of a movie's overall financial performance.
 
 
 ## Repository Structure
-├── images                                         <- Both sourced externally and generated from code <br>
-├── zippedData                                     <- Both sourced externally and generated from code <br>
+├── images                                         <- generated from code <br>
+├── zippedData                                     <- sourced externally  <br>
 ├── README.md                                      <- The top-level README for reviewers of this project <br>
 ├── presentation.pdf                               <- PDF version of project presentation <br>
 └── student.ipynb                                  <- Narrative documentation of analysis in Jupyter notebook <br>
