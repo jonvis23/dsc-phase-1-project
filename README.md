@@ -29,7 +29,7 @@ This project employs exploratory descriptive analysis using several essential st
 
 ## Results
 Among the genres present in this dataset, drama, comedy, and action stand out with the highest number of movie releases. Drama and comedy likely hold the title of the most extensive film genres due to their inclusivity of a wide range of films.
-![image](images\Number of movies per genre.png)
+![image](images\Number_of_movies_per_genre.png)
 
 The difference between the heights of the bars, which represent the average rating, is quite small.Documentary, biography and sport have the highest average rating while family, thriller and horror have the lowest average rating.
 ![My image](images/rating_by_genre.png)
