@@ -1,6 +1,6 @@
 # MICROSOFT MOVIE STUDIO ANALYSIS
 
-Author: John ELvis
+Author: John Elvis
 
 ## Overview 
 This project employs exploratory data analysis to extract valuable information for Microsoft, aiming to establish a new movie studio. By analyzing datasets from IMDB and Box Office Mojo, the project provides recommendations regarding the film genres that Microsoft should consider exploring. 
